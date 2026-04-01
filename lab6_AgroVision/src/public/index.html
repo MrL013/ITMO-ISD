@@ -1,0 +1,38 @@
+﻿<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AgroVision Prototype</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>AgroVision</h1>
+      <p>Прототип панели управления умным сельским хозяйством с LLM-рекомендациями.</p>
+
+      <section class="grid">
+        <article class="card">
+          <h2>Выбор поля</h2>
+          <select id="fieldSelect"></select>
+          <p id="fieldInfo"></p>
+          <button id="refreshBtn">Обновить сводку</button>
+        </article>
+
+        <article class="card">
+          <h2>Метрики</h2>
+          <div id="metrics"></div>
+        </article>
+      </section>
+
+      <section class="card" style="margin-top: 16px">
+        <h2>LLM-рекомендация</h2>
+        <button id="recommendBtn">Сформировать рекомендацию</button>
+        <p id="source"></p>
+        <pre id="recommendation">Ожидание запроса...</pre>
+      </section>
+    </main>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
